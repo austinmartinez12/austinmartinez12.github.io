@@ -3,20 +3,25 @@ project:
   output-dir: docs
 
 website:
-  title: "austinmartinez12.github.io"
+  title: "Austin Martinez"
   navbar:
-    left:
+    right:
       - href: index.qmd
         text: Home
       - about.qmd
+      - href: resources.qmd
+        text: Resources
 
 format:
   html:
     theme:
-      - cosmo
+      #- light: lumen
+      #- dark: dark
+      - cosmo #https://quarto.org/docs/output-formats/html-themes.html for themes
       - brand
     css: styles.css
     toc: true
+    page-layout: full
 
 
 
