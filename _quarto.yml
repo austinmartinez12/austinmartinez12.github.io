@@ -4,24 +4,28 @@ project:
 
 website:
   title: "Austin Martinez"
+  favicon: Images/IMG_0685 copy.png # change to logo
   navbar:
+    title: false
+    logo: Images/IMG_0685 copy.png # change to logo
+    logo-alt: "blah blah"
     right:
       - href: index.qmd
         text: Home
-     # - about.qmd
-     # - href: resources.qmd
-     #   text: Resources
-
+      - about.qmd
+      - href: resources.qmd
+        text: Resources
+      - icon: github
+        href: https://github.com/austinmartinez12/austinmartinez12.github.io
+  page-footer: 
+    left: Copyright 2025, Austin Martinez
+    right:
+     - icon: https://github.com/austinmartinez12
 format:
   html:
-    theme:
-      #- light: lumen
-      #- dark: dark
-      - cosmo #https://quarto.org/docs/output-formats/html-themes.html for themes
-      - brand
-    css: styles.css
+    theme: style.scss
     toc: true
     page-layout: full
-
+    mainfont: Nunito
 
 
