@@ -1,0 +1,24 @@
+---
+title: "My first blog post!"
+description: "a short description of this blog post"
+author: 
+  - name: Austin Martinez
+    url: http://austinmartinez12.github.io/
+    affiliation: The Bren School of Enviromental Management
+    affiliation-url: https://bren.ucsb.edu/courses/eds-220
+    #orchid: 
+date: 2025-11-12
+categories: [MEDS, R, data-viz]
+image: IMG_0685 copy Large.jpeg
+citation:
+    url: http://austinmartinez12.github.io/posts/my-first-blog-post/
+draft: true # specifies its under construction
+draft-mode: linked # takes it off page
+---
+
+This is where body of blog post begins! I'm going to add a footnote here[^1].
+here's a inline footnote^[here is another footnote]
+
+[^1]: here is some additional contex that might be helpful
+
+im going to cite my self here [@shanny-csik2022]

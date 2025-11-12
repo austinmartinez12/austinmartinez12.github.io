@@ -1,0 +1,12 @@
+# any options here will apply to all posts in posts folder
+
+author: 
+  - name: Austin Martinez
+    url: http://austinmartinez12.github.io/
+    affiliation: The Bren School of Enviromental Management
+    affiliation-url: https://bren.ucsb.edu/courses/eds-220
+    #orchid: 
+
+title-block-banner: true
+
+freeze: auto

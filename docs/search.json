@@ -1,10 +1,10 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Austin Martinez",
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "resources",
     "section": "",
-    "text": "What’s up! My name is Austin Martinez (He/Him). I’m currently a graduate student pursuing a Masters of Environmental Data Science at UC Santa Barbara. I am an aspiring GIS analyst and data scientist. I am passionate about applying my background in GIS, machine learning, and predictive modeling to tackle interdisciplinary problems at the intersection of data and decision-making, while also making complex data accessible to everyone, regardless of educational or cultural background. When I’m not coding you can find me at the nearest fishable body of water trying to catch myself a big one."
+    "text": "this is a h1 element\n\n\nthis is a h1 element with the title class\n\n\nthis paragraph is organge\n\n\nthis text is centered\n\n\nthis text is centered\n\n\nHere’s where I’m describe something fun I enjoy doing\nher’s a full line\n\nline here.\nline here."
   },
   {
     "objectID": "about.html",
@@ -28,10 +28,17 @@
     "text": "What I do for fun\nGive the people what they want!"
   },
   {
-    "objectID": "resources.html",
-    "href": "resources.html",
-    "title": "resources",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Austin Martinez",
     "section": "",
-    "text": "this is a h1 element\n\n\nthis is a h1 element with the title class\n\n\nthis paragraph is organge\n\n\nthis text is centered\n\n\nthis text is centered\n\n\nHere’s where I’m describe something fun I enjoy doing\nher’s a full line\n\nline here.\nline here."
+    "text": "What’s up! My name is Austin Martinez (He/Him). I’m currently a graduate student pursuing a Masters of Environmental Data Science at UC Santa Barbara. I am an aspiring GIS analyst and data scientist. I am passionate about applying my background in GIS, machine learning, and predictive modeling to tackle interdisciplinary problems at the intersection of data and decision-making, while also making complex data accessible to everyone, regardless of educational or cultural background. When I’m not coding you can find me at the nearest fishable body of water trying to catch myself a big one."
+  },
+  {
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "Blog",
+    "section": "",
+    "text": "No matching items"
   }
 ]
