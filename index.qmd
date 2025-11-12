@@ -7,12 +7,15 @@ about:
   image-width: 17em
   links: 
     - text: LinkedIn
+      icon: linkedin
       href: https://www.linkedin.com/in/austinmartinez20/
       target: _blank
     - text: Github
+      icon: github # make an icon
       href: https://github.com/austinmartinez12
       target: _blank
     - text: Email
+      icon: email
       href: mailto:austinmartinez@ucsb.edu
 ---
 

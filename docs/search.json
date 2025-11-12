@@ -11,6 +11,27 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "Here is what u do professionally!"
+  },
+  {
+    "objectID": "about.html#what-i-do-for-work",
+    "href": "about.html#what-i-do-for-work",
+    "title": "About",
+    "section": "",
+    "text": "Here is what u do professionally!"
+  },
+  {
+    "objectID": "about.html#what-i-do-for-fun",
+    "href": "about.html#what-i-do-for-fun",
+    "title": "About",
+    "section": "What I do for fun",
+    "text": "What I do for fun\nGive the people what they want!"
+  },
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "resources",
+    "section": "",
+    "text": "this is a h1 element\n\n\nthis is a h1 element with the title class\n\n\nthis paragraph is organge\n\n\nthis text is centered\n\n\nthis text is centered\n\n\nHere’s where I’m describe something fun I enjoy doing\nher’s a full line\n\nline here.\nline here."
   }
 ]
