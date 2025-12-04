@@ -1,0 +1,12 @@
+{
+  "hash": "8a41b344bd43f32944bdb39a1fb34308",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Eaton and Palisades Fires analysis\"\ndescription: \"blog post description\"\nauthor:\n  - name: Austin Martinez\n    url: http://austinmartinez12.github.io/\n    affiliation: Master of Environmental Data Science @ The Bren School of Enviromental Management\n    affiliation-url: https://ucsb-meds.github.io/\ndate: 12-03-2025\ncategories: [Python]\nbibliography: references.bib\ncitation:\n  url: http://austinmartinez12.github.io/posts/2025-12-03-Eaton_Palisades-Fires-analysis/\nimage: Fire.png\ndraft: false\n---\n\n::: {#613d95f3 .cell execution_count=1}\n``` {.python .cell-code}\n# Run your external python script\nexec(open(\"fires-analysis-blog-post.ipynb\").read())\n```\n:::\n\n\n",
+    "supporting": [
+      "index_files/figure-html"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

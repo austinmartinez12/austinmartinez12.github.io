@@ -3,10 +3,12 @@
 author: 
   - name: Austin Martinez
     url: http://austinmartinez12.github.io/
-    affiliation: The Bren School of Enviromental Management
-    affiliation-url: https://bren.ucsb.edu/courses/eds-220
+    affiliation: Master of Environmental Data Science @ The Bren School of Enviromental Management
+    affiliation-url: https://ucsb-meds.github.io/
     #orchid: 
 
+# enable banner style title blocks ----
 title-block-banner: true
 
+# re-render posts only when a change to the source file is made ----
 freeze: auto
