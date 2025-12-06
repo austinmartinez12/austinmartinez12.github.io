@@ -10,16 +10,17 @@ $josefin: "Josefin Sans", sans-serif;
 
 // colors 
 // define Sass stars
-$White: #FFFFFF;
-$Antique-white: #FFE8D1;
-$Air-Force-blue: #568EA3;
+$Light-cyan: #EDF2FB;
 $Sky-blue: #68C3D4;
+$Sand: #F3E9DC;
+$Air-Force-blue: #568EA3;
 $Royal-blue: #222A68;
+$White: #F2F4F3;
 
 // define quarto variables
-$body-bg: $White; 
-$navbar-bg: $Antique-white;
-$navbar-fg: $Air-Force-blue;
+$body-bg: $White; // background
+$navbar-bg: $Air-Force-blue; // nav bar
+$navbar-fg: $Royal-blue; // nav bar text
 $navbar-hl: $Royal-blue;
 $ink-color: $Sky-blue;
 
@@ -39,7 +40,7 @@ h1, h2 {
 }
 
 .title{
-  color: maroon;
+  color: $Royal-blue;
 }
 
 .center-text {

@@ -4,10 +4,10 @@ project:
 
 website:
   title: "Austin Martinez"
-  favicon: Images/IMG_0685 copy.png # change to logo
+  favicon: Images/Logo.png # change to logo
   navbar:
     title: false
-    logo: Images/IMG_0685 copy.png # change to logo
+    logo: Images/Logo.png # change to logo
     logo-alt: "blah blah"
     right:
       - href: index.qmd

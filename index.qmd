@@ -1,6 +1,6 @@
 ---
 title: "Austin Martinez"
-image: IMG_0685 copy.jpeg
+image: profile_pic.png
 about:
   template: trestles
   image-shape: rounded
