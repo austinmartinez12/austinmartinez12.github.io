@@ -3,8 +3,9 @@ title: "Chloride Contamination Analysis"
 description: "Identifying drivers of lake contamination by chloride in the Midwest and Northeast United States"
 format: 
   html: 
+    self-contained: false
     code-fold: false
-    embed-resources: true
+    embed-resources: false
 editor: visual
 author:
   - name: Austin Martinez
