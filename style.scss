@@ -29,8 +29,14 @@ h1,h2,h3,h4 {
   font-family: $josefin;
 }
 
+/* Adjust the navbar height */
+.navbar {
+    height: 80px;       /* set desired navbar height */
+    min-height: 80px;   /* ensure it doesn't shrink */
+}
+
 .navbar-brand img {
-  max-height: 40px;
+  max-height: 80px;
   width: auto;
 }
 
