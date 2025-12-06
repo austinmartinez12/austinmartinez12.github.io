@@ -26,7 +26,7 @@ execute:
 ---
 
 # Identifying drivers of lake contamination by chloride in the Midwest and Northeast United States
-
+[@dugan_lake_chloride_2020]
 ## Purpose
 
 The purpose of this project is to identify different drivers of lake contamination by anthropogenic chloride in Midwest and Northeast United States. Its important to identify drivers of chloride contamination because of its negative effects on ecosystems and drinking water quality. By seeing what variables have a positive effect on chloride concentrations, we can better identify lakes at risk.

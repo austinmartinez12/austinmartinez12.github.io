@@ -285,7 +285,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="reading-in-data" class="level3">
 <h3 class="anchored" data-anchor-id="reading-in-data">Reading in Data</h3>
 <p>In the code 3 code chunks are for importing the libraries necessary for running this notebook. Reproducible file path were created using os, these file path were used to read in the shapefiles, geodatabase, and raster. The 4 datasets were named Eaton(Eaton shapefile), Palisades(Palisades shapefile), EJI(EJI geodatabase), and Landsat_8(Landsat 8 raster).</p>
-<div id="1747cb07-afa5-48f9-b9e8-0dcdd0e1b84f" class="cell" data-tags="[]" data-execution_count="176">
+<div id="1747cb07-afa5-48f9-b9e8-0dcdd0e1b84f" class="cell" data-tags="[]" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load in Libraries</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -296,19 +296,50 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> contextily <span class="im">as</span> ctx</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="7d22c208-daad-4b94-8d4e-6ab23c3ac0e8" class="cell" data-tags="[]" data-execution_count="177">
+<div id="7d22c208-daad-4b94-8d4e-6ab23c3ac0e8" class="cell" data-tags="[]" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a reproducible file path</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>Eaton_fp <span class="op">=</span> os.path.join(<span class="st">'data'</span>,<span class="st">'Eaton_Perimeter_20250121'</span>,<span class="st">'Eaton_Perimeter_20250121.shp'</span>)</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>Palisades_fp <span class="op">=</span> os.path.join(<span class="st">'data'</span>,<span class="st">'Palisades_Perimeter_20250121'</span>,<span class="st">'Palisades_Perimeter_20250121.shp'</span>)</span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>EJ_fp <span class="op">=</span> os.path.join(<span class="st">"data"</span>, <span class="st">"EJI_2024_United_States"</span>, <span class="st">"EJI_2024_United_States.gdb"</span>)</span>
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>NC_fp <span class="op">=</span> os.path.join(<span class="st">'data'</span>,<span class="st">'landsat8-2025-02-23-palisades-eaton.nc'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="6a39284c-75b7-4037-9397-1d2a2b8cb2a5" class="cell" data-tags="[]" data-execution_count="178">
+<div id="6a39284c-75b7-4037-9397-1d2a2b8cb2a5" class="cell" data-tags="[]" data-execution_count="10">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Read in data</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>Eaton <span class="op">=</span> gpd.read_file(Eaton_fp)</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>Palisades <span class="op">=</span> gpd.read_file(Palisades_fp)</span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>EJI <span class="op">=</span> gpd.read_file(EJ_fp)</span>
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>Landsat_8 <span class="op">=</span> xr.open_dataset(NC_fp)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-error">
+<div class="ansi-escaped-output">
+<pre><span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">ValueError</span>                                Traceback (most recent call last)
+<span class="ansi-cyan-fg">Cell</span><span class="ansi-cyan-fg"> </span><span class="ansi-green-fg">In[10]</span><span class="ansi-green-fg">, line 5</span>
+<span class="ansi-green-fg">      3</span> Palisades = gpd.read_file(Palisades_fp)
+<span class="ansi-green-fg">      4</span> EJI = gpd.read_file(EJ_fp)
+<span class="ansi-green-fg">----&gt; </span><span class="ansi-green-fg">5</span> Landsat_8 = <span class="ansi-yellow-bg">xr</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">open_dataset</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">NC_fp</span><span class="ansi-yellow-bg">)</span>
+
+<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">~/opt/anaconda3/envs/eds220-env/lib/python3.11/site-packages/xarray/backends/api.py:652</span>, in <span class="ansi-cyan-fg">open_dataset</span><span class="ansi-blue-fg">(filename_or_obj, engine, chunks, cache, decode_cf, mask_and_scale, decode_times, decode_timedelta, use_cftime, concat_characters, decode_coords, drop_variables, inline_array, chunked_array_type, from_array_kwargs, backend_kwargs, **kwargs)</span>
+<span class="ansi-green-fg">    649</span>     kwargs.update(backend_kwargs)
+<span class="ansi-green-fg">    651</span> <span style="font-weight:bold;color:rgb(0,135,0)">if</span> engine <span style="font-weight:bold;color:rgb(175,0,255)">is</span> <span style="font-weight:bold;color:rgb(0,135,0)">None</span>:
+<span class="ansi-green-fg">--&gt; </span><span class="ansi-green-fg">652</span>     engine = <span class="ansi-yellow-bg">plugins</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">guess_engine</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">filename_or_obj</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-fg">    654</span> <span style="font-weight:bold;color:rgb(0,135,0)">if</span> from_array_kwargs <span style="font-weight:bold;color:rgb(175,0,255)">is</span> <span style="font-weight:bold;color:rgb(0,135,0)">None</span>:
+<span class="ansi-green-fg">    655</span>     from_array_kwargs = {}
+
+<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">~/opt/anaconda3/envs/eds220-env/lib/python3.11/site-packages/xarray/backends/plugins.py:194</span>, in <span class="ansi-cyan-fg">guess_engine</span><span class="ansi-blue-fg">(store_spec)</span>
+<span class="ansi-green-fg">    186</span> <span style="font-weight:bold;color:rgb(0,135,0)">else</span>:
+<span class="ansi-green-fg">    187</span>     error_msg = (
+<span class="ansi-green-fg">    188</span>         <span class="ansi-yellow-fg">"</span><span class="ansi-yellow-fg">found the following matches with the input file in xarray</span><span class="ansi-yellow-fg">'</span><span class="ansi-yellow-fg">s IO </span><span class="ansi-yellow-fg">"</span>
+<span class="ansi-green-fg">    189</span>         <span class="ansi-yellow-fg">f</span><span class="ansi-yellow-fg">"</span><span class="ansi-yellow-fg">backends: </span><span style="font-weight:bold;color:rgb(175,95,135)">{</span>compatible_engines<span style="font-weight:bold;color:rgb(175,95,135)">}</span><span class="ansi-yellow-fg">. But their dependencies may not be installed, see:</span><span style="font-weight:bold;color:rgb(175,95,0)">\n</span><span class="ansi-yellow-fg">"</span>
+<span class="ansi-green-fg">    190</span>         <span class="ansi-yellow-fg">"</span><span class="ansi-yellow-fg">https://docs.xarray.dev/en/stable/user-guide/io.html </span><span style="font-weight:bold;color:rgb(175,95,0)">\n</span><span class="ansi-yellow-fg">"</span>
+<span class="ansi-green-fg">    191</span>         <span class="ansi-yellow-fg">"</span><span class="ansi-yellow-fg">https://docs.xarray.dev/en/stable/getting-started-guide/installing.html</span><span class="ansi-yellow-fg">"</span>
+<span class="ansi-green-fg">    192</span>     )
+<span class="ansi-green-fg">--&gt; </span><span class="ansi-green-fg">194</span> <span style="font-weight:bold;color:rgb(0,135,0)">raise</span> <span style="font-weight:bold;color:rgb(215,95,95)">ValueError</span>(error_msg)
+
+<span class="ansi-red-fg">ValueError</span>: found the following matches with the input file in xarray's IO backends: ['netcdf4', 'h5netcdf']. But their dependencies may not be installed, see:
+https://docs.xarray.dev/en/stable/user-guide/io.html 
+https://docs.xarray.dev/en/stable/getting-started-guide/installing.html</pre>
+</div>
+</div>
 </div>
 </section>
 </section>
@@ -321,7 +352,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="polygon-intersection" class="level3">
 <h3 class="anchored" data-anchor-id="polygon-intersection">Polygon intersection</h3>
 <p>The next 3 code chunks are used to spatially join the EJI data with the Palisades fire perimeter using geopandas.sjoin() to get a geopandas.GeoDataFrame that will have only have the census tracts intersecting the Palisades fire perimeter.</p>
-<div id="37da447c-136c-44b6-bcbc-5441d507aa20" class="cell" data-tags="[]" data-execution_count="179">
+<div id="37da447c-136c-44b6-bcbc-5441d507aa20" class="cell" data-tags="[]">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Transform the CRS of Palisades to match the CRS of EJI</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>Palisades <span class="op">=</span> Palisades.to_crs(EJI.crs)</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -331,11 +362,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code> Palisades and EJI CRSs match: True</code></pre>
 </div>
 </div>
-<div id="7210ae37-a2d1-4ddc-9a47-1151519beecc" class="cell" data-tags="[]" data-execution_count="180">
+<div id="7210ae37-a2d1-4ddc-9a47-1151519beecc" class="cell" data-tags="[]">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Spatially join the EJI data with the Palisades fire perimeter</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>PE_data <span class="op">=</span> gpd.sjoin(EJI, Palisades)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="7da18049-485d-4f8c-b065-7a3f4eadd03b" class="cell" data-tags="[]" data-execution_count="181">
+<div id="7da18049-485d-4f8c-b065-7a3f4eadd03b" class="cell" data-tags="[]">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the census tracts that intersect the Palisades fire perimeter</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots()</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>PE_data.plot(ax<span class="op">=</span>ax, color<span class="op">=</span><span class="st">'green'</span>)</span>
@@ -352,7 +383,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>The next 3 code chunks are used to spatially join the EJI data with the Eaton fire perimeter using geopandas.sjoin() to get a geopandas.GeoDataFrame that will have only have the census tracts intersecting the Eaton fire perimeter.</p>
-<div id="7dc2f00a-4ddd-4c2b-9a50-df482b4f782f" class="cell" data-tags="[]" data-execution_count="182">
+<div id="7dc2f00a-4ddd-4c2b-9a50-df482b4f782f" class="cell" data-tags="[]">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Transform the CRS of Eaton to match the CRS of EJI</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>Eaton <span class="op">=</span> Eaton.to_crs(EJI.crs)</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -362,11 +393,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code> Eaton and EJI CRSs match: True</code></pre>
 </div>
 </div>
-<div id="cb516d65-8621-4735-842a-10f1d764ce86" class="cell" data-tags="[]" data-execution_count="183">
+<div id="cb516d65-8621-4735-842a-10f1d764ce86" class="cell" data-tags="[]">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Spatially join the EJI data with the Palisades fire perimeter</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>EE_data <span class="op">=</span> gpd.sjoin(EJI, Eaton)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="4c96abc5-d8e6-4f58-9a80-d364b42d2743" class="cell" data-tags="[]" data-execution_count="184">
+<div id="4c96abc5-d8e6-4f58-9a80-d364b42d2743" class="cell" data-tags="[]">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the census tracts that intersect the Eaton fire perimeter</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots()</span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>EE_data.plot(ax<span class="op">=</span>ax, color<span class="op">=</span><span class="st">'green'</span>)</span>
@@ -386,12 +417,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="polygon-clipping" class="level3">
 <h3 class="anchored" data-anchor-id="polygon-clipping">Polygon clipping</h3>
 <p>The next 2 code chunks are used to clip the census tracts to the Palisades and Eaton Fires perimeter using geopandas.clip(). The clipped census tracts(<code>Palisades_fire</code>, <code>Eaton_fire</code>) were then plotted ontop of the fires perimeters to show they are the same shape.</p>
-<div id="86a70e6f-b999-458c-8c6e-8f0a9b6491b7" class="cell" data-tags="[]" data-execution_count="185">
+<div id="86a70e6f-b999-458c-8c6e-8f0a9b6491b7" class="cell" data-tags="[]">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Clip the census tracts to the Palisades and Eaton Fires perimeter</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>Eaton_fire <span class="op">=</span> gpd.clip(EE_data, Eaton)</span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>Palisades_fire <span class="op">=</span> gpd.clip(PE_data, Palisades)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="96c2621f" class="cell" data-execution_count="186">
+<div id="96c2621f" class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the clipped census tracts over the fires perimeters to show they are the same shape</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>fig, (ax1, ax2) <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">20</span>, <span class="dv">10</span>))</span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -423,7 +454,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="visualize-fire-perimeters-with-a-basemap" class="level3">
 <h3 class="anchored" data-anchor-id="visualize-fire-perimeters-with-a-basemap">Visualize fire perimeters with a basemap</h3>
 <p>The code chunk below is used to visualize fire perimeters with a basemap. This was done by adding a basemap to the plot using the contextily library.</p>
-<div id="90920646-1ca8-4608-8ff1-e1bb4924e767" class="cell" data-tags="[]" data-execution_count="187">
+<div id="90920646-1ca8-4608-8ff1-e1bb4924e767" class="cell" data-tags="[]">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the fire perimeters with a basemap</span></span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">1</span>, figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">12</span>))</span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -461,7 +492,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="visualize-eji-data" class="level3">
 <h3 class="anchored" data-anchor-id="visualize-eji-data">Visualize EJI data</h3>
 <p>The code chunk below was used to plot a given variable(<code>E_UNEMP</code>)that was relevant to a community’s response to a wildfire.</p>
-<div id="2ddb67cc-ee0e-491a-b516-283213994f7f" class="cell" data-tags="[]" data-execution_count="188">
+<div id="2ddb67cc-ee0e-491a-b516-283213994f7f" class="cell" data-tags="[]">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>fig, (ax1, ax2) <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">20</span>, <span class="dv">10</span>))</span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Insert EJI variable to visualize</span></span>
@@ -516,7 +547,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="visualizing-fire-scares-through-false-color-1">Visualizing Fire Scares Through False Color</h2>
 <section id="fire-perimeter-data-exploration" class="level3">
 <h3 class="anchored" data-anchor-id="fire-perimeter-data-exploration">Fire perimeter data exploration</h3>
-<div id="58c9eec9" class="cell" data-execution_count="189">
+<div id="58c9eec9" class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Check if data are projected or geographic</span></span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"The CRS of Eaton is projected: </span><span class="sc">{</span>Eaton<span class="sc">.</span>crs<span class="sc">.</span>is_projected<span class="sc">}</span><span class="ss">"</span>)</span>
 <span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"The CRS of Palisades is projected: </span><span class="sc">{</span>Palisades<span class="sc">.</span>crs<span class="sc">.</span>is_projected<span class="sc">}</span><span class="ss">"</span>, <span class="st">"</span><span class="ch">\n</span><span class="st">"</span>)</span>
@@ -535,7 +566,7 @@ The CRS of Palisades is projected: True
 <h3 class="anchored" data-anchor-id="restoring-geospatial">Restoring geospatial</h3>
 <p>The 5 code chunks below are used to clean the data, so that a true color image can be created from landsat_8.</p>
 <p>In the code chunk below, the crs for Landsat_8 is stored in the spatial_ref variable. To recover the geospatial information from it rio.write_crs() was used. rio.crs can now be used to access the CRS of landsat_8.</p>
-<div id="ac1b19f3" class="cell" data-execution_count="190">
+<div id="ac1b19f3" class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Print the CRS by using the spatial_ref.crs_wkt attribute</span></span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Landsat_8 CRS: </span><span class="sc">{</span>Landsat_8<span class="sc">.</span>spatial_ref<span class="sc">.</span>crs_wkt<span class="sc">}</span><span class="ss">"</span>,<span class="st">"</span><span class="ch">\n</span><span class="st">"</span>)</span>
 <span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -556,7 +587,7 @@ Updated CRS: EPSG:32611</code></pre>
 <section id="data-cleaning-and-visualization---true-color" class="level4">
 <h4 class="anchored" data-anchor-id="data-cleaning-and-visualization---true-color">Data Cleaning and Visualization - True-color</h4>
 <p>In the code chunk below, the red, green, and blue variables (in that order) of the xarray.Dataset were selected and were converted to an array using the to_array() method. The array was then plotted using .plot.imshow() to create an RGB image with the data. Unfortunately, no image was produced because of the clouds: their RGB values are outliers and cause the other values to be squished when plotting. The parameter robust=True was used to adjust the scale used for plotting the bands to get a true color image.</p>
-<div id="835af335" class="cell" data-execution_count="191">
+<div id="835af335" class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Select the red, green, and blue variables of the xarray.Dataset holding the Landsat data</span></span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Use .plot.imshow() to create an RGB image with the data</span></span>
 <span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>Landsat_8[[<span class="st">"red"</span>, <span class="st">"green"</span>, <span class="st">"blue"</span>]].to_array().plot.imshow(robust<span class="op">=</span><span class="va">True</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -573,7 +604,7 @@ Updated CRS: EPSG:32611</code></pre>
 </div>
 </div>
 <p>In the nect 2 code chunks below, to resolve the warning the bands with nan values were identified using a for loop and .fillna() was used to replace the nan values with 0s. The bands blue and green had nans. Once, the nans were replaced with 0s the warning was resolved.</p>
-<div id="61585e05" class="cell" data-execution_count="192">
+<div id="61585e05" class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Select "red", "green", "blue" bands</span></span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>bands <span class="op">=</span> [<span class="st">"red"</span>, <span class="st">"green"</span>, <span class="st">"blue"</span>]</span>
 <span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -587,7 +618,7 @@ green contains NaN values? True
 blue contains NaN values? True</code></pre>
 </div>
 </div>
-<div id="1a4386a4" class="cell" data-execution_count="193">
+<div id="1a4386a4" class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Fill NaNs with 0 to avoid casting issues</span></span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>Landsat_8[[<span class="st">"green"</span>, <span class="st">"blue"</span>]] <span class="op">=</span> Landsat_8[[<span class="st">"green"</span>, <span class="st">"blue"</span>]].fillna(<span class="dv">0</span>)</span>
 <span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -608,7 +639,7 @@ blue contains NaN values? True</code></pre>
 <section id="data-cleaning-and-visualization---true-color-1" class="level4">
 <h4 class="anchored" data-anchor-id="data-cleaning-and-visualization---true-color-1">Data Cleaning and Visualization - True-color</h4>
 <p>The code chunk below created a false-color image by using the “swir22”, “nir08”, and “red” bands. This was plotted using the same method used with the true color image.</p>
-<div id="6e472db2" class="cell" data-execution_count="194">
+<div id="6e472db2" class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use .plot.imshow() to create a false color image with the data</span></span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>Landsat_8[[<span class="st">"swir22"</span>, <span class="st">"nir08"</span>, <span class="st">"red"</span>]].to_array().plot.imshow(robust<span class="op">=</span><span class="va">True</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
@@ -624,7 +655,7 @@ blue contains NaN values? True</code></pre>
 <section id="false-color-map-with-fire-parimeters" class="level3">
 <h3 class="anchored" data-anchor-id="false-color-map-with-fire-parimeters">False-color map with fire parimeters</h3>
 <p>In the code chunk below, the CRS of Eaton and Palisades was reprojected to match the Landsat_8 CRS. This was done so we can plot the Eaton and Palisades perimeters onto the false-color image. A for loop was then used to identify that the “swir22”, “nir08” had nan values. To resolve this .fillna(0) was used to replace the nan values with 0s.</p>
-<div id="ad1a7ce1" class="cell" data-execution_count="195">
+<div id="ad1a7ce1" class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Change the CRS of Palisades and Eaton to match Landsat_8</span></span>
 <span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>Palisades <span class="op">=</span> Palisades.to_crs(Landsat_8.rio.crs)</span>
 <span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>Eaton <span class="op">=</span> Eaton.to_crs(Landsat_8.rio.crs)</span>
@@ -652,7 +683,7 @@ nir08 contains NaN values? False</code></pre>
 </div>
 </div>
 <p>The code chunk below is used to plot the Eaton and Palisades perimeters onto the false-color image.</p>
-<div id="0ab50f4b" class="cell" data-execution_count="196">
+<div id="0ab50f4b" class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create figure</span></span>
 <span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">1</span>, figsize<span class="op">=</span>(<span class="dv">9</span>, <span class="dv">6</span>))</span>
 <span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a></span>
