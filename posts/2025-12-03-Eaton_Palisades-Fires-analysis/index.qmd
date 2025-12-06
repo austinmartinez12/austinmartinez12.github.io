@@ -375,6 +375,6 @@ plt.show()
 ##### Map Description:
 The map above shows a false color image of the LA County area, displaying the perimeter of fires that occured in the Palisades(in red) and Eaton(in blue). False color imagery is being used in the background image. The background image is made up of SWIR (short-wave infrared), NIR (near-infrared), and Red bands. These bands are used to enhance burn severity and vegetation patterns. The false colors in this background image show healthy vegetation as bright green, urban areas as cyan/gray, and burnt area areas as a reddish brown.
 
-[@lacounty_fireperimeters_2025]
-[@usgs_landsat_eatonpalisades_2025]
-[@cdc_eji_2024]
+1. [@lacounty_fireperimeters_2025]
+2. [@usgs_landsat_eatonpalisades_2025]
+3. [@cdc_eji_2024]
