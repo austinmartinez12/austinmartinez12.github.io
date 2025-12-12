@@ -364,7 +364,7 @@ Research has shown that **Red abalone** need need the following conditions for o
 -   Depth: 0 - 24 m meters below sea level
 
 ```{r}
-# Use suitable_eez() on Red abalone
+# Use suitable_eez() function on Red abalone
 suitable_eez(min_depth = -24, max_depth = 0, min_sst = 8, max_sst = 18, species_name = "Red abalone")
 ```
 ## Results
