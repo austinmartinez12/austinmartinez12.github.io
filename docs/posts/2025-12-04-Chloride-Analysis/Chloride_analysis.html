@@ -58,27 +58,7 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -88,7 +68,7 @@ div.csl-indent {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../Images/IMG_0685 copy.png" rel="icon" type="image/png">
+<link href="../../Images/Logo_noback.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -99,7 +79,7 @@ div.csl-indent {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-98f689c8cd46b799403a8cbbf826f407.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-10fc1ebfec0e1c98e63ea1664b3262ca.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -170,8 +150,8 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../Images/IMG_0685 copy.png" alt="blah blah" class="navbar-logo light-content">
-    <img src="../../Images/IMG_0685 copy.png" alt="blah blah" class="navbar-logo dark-content">
+    <img src="../../Images/Logo_noback.png" alt="blah blah" class="navbar-logo light-content">
+    <img src="../../Images/Logo_noback.png" alt="blah blah" class="navbar-logo dark-content">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -264,6 +244,7 @@ window.Quarto = {
   <ul>
   <li><a href="#identifying-drivers-of-lake-contamination-by-chloride-in-the-midwest-and-northeast-united-states" id="toc-identifying-drivers-of-lake-contamination-by-chloride-in-the-midwest-and-northeast-united-states" class="nav-link active" data-scroll-target="#identifying-drivers-of-lake-contamination-by-chloride-in-the-midwest-and-northeast-united-states">Identifying drivers of lake contamination by chloride in the Midwest and Northeast United States</a>
   <ul class="collapse">
+  <li><a href="#purpose" id="toc-purpose" class="nav-link" data-scroll-target="#purpose">Purpose</a></li>
   <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a>
   <ul class="collapse">
   <li><a href="#study-question" id="toc-study-question" class="nav-link" data-scroll-target="#study-question">Study Question:</a></li>
@@ -275,9 +256,10 @@ window.Quarto = {
   <li><a href="#hypothesis" id="toc-hypothesis" class="nav-link" data-scroll-target="#hypothesis">Hypothesis</a></li>
   </ul></li>
   <li><a href="#model-output" id="toc-model-output" class="nav-link" data-scroll-target="#model-output">Model Output</a></li>
-  <li><a href="#simulate-data" id="toc-simulate-data" class="nav-link" data-scroll-target="#simulate-data">Simulate Data</a></li>
   <li><a href="#data-visualization" id="toc-data-visualization" class="nav-link" data-scroll-target="#data-visualization">Data Visualization</a></li>
   <li><a href="#restating-hypothesis" id="toc-restating-hypothesis" class="nav-link" data-scroll-target="#restating-hypothesis">Restating Hypothesis</a></li>
+  <li><a href="#simulate-data" id="toc-simulate-data" class="nav-link" data-scroll-target="#simulate-data">Simulate Data</a></li>
+  <li><a href="#check-the-real-data-model-estimates-against-the-simulation-model-estimates" id="toc-check-the-real-data-model-estimates-against-the-simulation-model-estimates" class="nav-link" data-scroll-target="#check-the-real-data-model-estimates-against-the-simulation-model-estimates">Check the real data model estimates against the simulation model estimates</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -291,8 +273,12 @@ window.Quarto = {
 
 <section id="identifying-drivers-of-lake-contamination-by-chloride-in-the-midwest-and-northeast-united-states" class="level1">
 <h1>Identifying drivers of lake contamination by chloride in the Midwest and Northeast United States</h1>
-<p><span class="citation" data-cites="dugan_lake_chloride_2020">(<a href="#ref-dugan_lake_chloride_2020" role="doc-biblioref">Dugan et al. 2020</a>)</span> ## Purpose</p>
+<section id="purpose" class="level2">
+<h2 class="anchored" data-anchor-id="purpose">Purpose</h2>
 <p>The purpose of this project is to identify different drivers of lake contamination by anthropogenic chloride in Midwest and Northeast United States. Its important to identify drivers of chloride contamination because of its negative effects on ecosystems and drinking water quality. By seeing what variables have a positive effect on chloride concentrations, we can better identify lakes at risk.</p>
+<p>Human activity has a big influence on chloride pollution in lakes. Chloride can be introduced into lakes via road salts, sewage leaks, industrial waste, and septic systems. The reason the Midwest and Northeast United States was chosen as the study area was due to its use of road salts. This region experiences lots of snow every year, so they utilize lots of road salts to keep ice off their roads. Unfortunately, this causes road salt run off to enter near by water bodies causing spikes in chloride concentration.</p>
+<p>When concentrations of chloride are high in freshwater ecosystems this causes physiological stress in many aquatic organisms such as fish, amphibians, and macroinvertebrates. Chloride disrupts their ability to regulate ions and maintain proper water balance. Chloride also increase water density, stratification, and reduces natural mixing causing lower oxygen levels in deeper waters. This can lead to reduced growth, reproduction problems, or death in sensitive species. The extent of chloride’s effect doesn’t stop their. Plants are also at risk because chloride causes leaf burn, which reduces photosynthesis. Reductions in photosynthesis will result in reduced plant growth, reduced oxygen in the water, and reduced food availability for fish and invertebrates.</p>
+</section>
 <section id="data" class="level2">
 <h2 class="anchored" data-anchor-id="data">Data</h2>
 <div class="cell">
@@ -309,15 +295,16 @@ window.Quarto = {
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Read in data</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">suppressMessages</span>(<span class="fu">read_csv</span>(<span class="fu">here</span>(<span class="st">'posts'</span>, <span class="st">'2025-12-04-Chloride-Analysis'</span>, <span class="st">'data'</span>, <span class="st">'edi.452.2'</span>, <span class="st">"lakeCL_trainingData.csv"</span>)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>The data I’m using has chloride concentrations for 2,773 lakes in the Midwest and Northeast United States. This data was collected from 1990-01-01 to 2018-12-13 and contains data about the lake’s watershed characteristics, dimensions, and its proximity to roads. When the chloride concentrations are plotted on a histogram its clear the data is right skewed. Since this variable is continuous, strictly positive, and right-skewed I decided to model it with a GLM with Gamma family and log link.</p>
+<p>The data I’m using has chloride concentrations for 2,773 lakes in the Midwest and Northeast United States. This data was collected from 1990-01-01 to 2018-12-13 and contains data about the lake’s watershed characteristics, dimensions, and its proximity to roads. When the chloride concentrations are plotted on a histogram its clear the data is positive. Since chloride is a continuous and strictly positive variable I decided to model it with a GLM with Gamma family and log link.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">|&gt;</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> Chloride)) <span class="sc">+</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">bins =</span> <span class="dv">50</span>, <span class="at">fill =</span> <span class="st">"lightblue"</span>, <span class="at">color =</span> <span class="st">"blue"</span>) <span class="sc">+</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Chloride Concentation in lakes"</span>,</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Chloride"</span>,</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Count"</span>) <span class="sc">+</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make a histogram showing the data distribution of Chloride</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>df <span class="sc">|&gt;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> Chloride)) <span class="sc">+</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">bins =</span> <span class="dv">50</span>, <span class="at">fill =</span> <span class="st">"lightblue"</span>, <span class="at">color =</span> <span class="st">"blue"</span>) <span class="sc">+</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Chloride Concentation in lakes"</span>,</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Chloride"</span>,</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Count"</span>) <span class="sc">+</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -326,10 +313,22 @@ window.Quarto = {
 </div>
 </div>
 </div>
+<p>For this analysis, I chose <code>WS_RoadDensity</code> as my main predictor variable of interest, and <code>WS_Dev_High</code>, <code>RoadDistance</code>, and <code>InterstateDistance</code> as confounding variables. I chose these 3 confounding variables because they show some correlation with chloride, as shows below in the correlation matrix.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualize how correlated Chloride is with WS_Dev_High, RoadDistance, and InterstateDistance</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cor</span>(df[, <span class="fu">c</span>(<span class="st">"Chloride"</span>, <span class="st">"WS_Dev_High"</span>, <span class="st">"RoadDistance"</span>, <span class="st">"InterstateDistance"</span>)], <span class="at">use =</span> <span class="st">"complete.obs"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                     Chloride WS_Dev_High RoadDistance InterstateDistance
+Chloride            1.0000000   0.3992240   -0.2464593         -0.2810675
+WS_Dev_High         0.3992240   1.0000000   -0.3160830         -0.3317458
+RoadDistance       -0.2464593  -0.3160830    1.0000000          0.4516994
+InterstateDistance -0.2810675  -0.3317458    0.4516994          1.0000000</code></pre>
+</div>
+</div>
 <section id="study-question" class="level3">
 <h3 class="anchored" data-anchor-id="study-question">Study Question:</h3>
 <ul>
-<li>Does the road density in a watershed impact chloride concentrations in lakes? (I’m wondering if I should run this analysis on high-intensity developed land in a watershed too)</li>
+<li>Does the road density in a watershed impact chloride concentrations in lakes?</li>
 </ul>
 <table class="caption-top table">
 <colgroup>
@@ -344,22 +343,6 @@ window.Quarto = {
 </thead>
 <tbody>
 <tr class="odd">
-<td><code>LakeArea</code></td>
-<td>Surface area of the lake</td>
-</tr>
-<tr class="even">
-<td><code>MaxDepth</code></td>
-<td>Maximum depth of lake</td>
-</tr>
-<tr class="odd">
-<td><code>WS_Area</code></td>
-<td>Surface area of the watershed</td>
-</tr>
-<tr class="even">
-<td><code>WS_OpenWater</code></td>
-<td>% landuse classified as open water in the watershed</td>
-</tr>
-<tr class="odd">
 <td><code>WS_Dev_High</code></td>
 <td>% landuse classified as developed, high intensity in the watershed</td>
 </tr>
@@ -368,18 +351,14 @@ window.Quarto = {
 <td>Road density in the watershed</td>
 </tr>
 <tr class="odd">
-<td><code>WS_Crops</code></td>
-<td>% landuse classified as row crops in the watershed</td>
-</tr>
-<tr class="even">
 <td><code>InterstateDistance</code></td>
 <td>Distance to the nearest interstate</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>RoadDistance</code></td>
 <td>Distance to the nearest road</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>Chloride</code></td>
 <td>Concentration of chloride in lake</td>
 </tr>
@@ -396,11 +375,11 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="data-cleaning">Data Cleaning</h2>
 <p>This data frame has multiple observations for the same lake. To resolve this I selected all rows with the same unique lake identifier(nhdid) and only kept the most recent observation.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># For lakes with multiple observations, only keep the most recent record</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(nhdid) <span class="sc">%&gt;%</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice_max</span>(ActivityStartDate, <span class="at">n =</span> <span class="dv">1</span>, <span class="at">with_ties =</span> <span class="cn">FALSE</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># For lakes with multiple observations, only keep the most recent record</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(nhdid) <span class="sc">%&gt;%</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice_max</span>(ActivityStartDate, <span class="at">n =</span> <span class="dv">1</span>, <span class="at">with_ties =</span> <span class="cn">FALSE</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="create-the-model" class="level2">
@@ -411,10 +390,7 @@ window.Quarto = {
 <p><span class="math display">\[
 \begin{align}
 Chloride &amp;\sim \text{Gamma}(\mu, \phi) \\
-\log(\mu) &amp;= \beta_0 + \beta_1 \,\text{WSRoadDensity} + \beta_2 \,\text{WSCrops} + \beta_3 \,\text{WSDevHigh} \\
-&amp;\quad + \beta_4 \,\text{LakeArea} + \beta_5 \,\text{WSArea} + \beta_6 \,\text{MaxDepth} \\
-&amp;\quad + \beta_7 \,\text{WSOpenWater} + \beta_8 \,\text{RoadDistance} + \beta_9 \,\text{InterstateDistance}
-\end{align}
+\log(\mu) &amp;= \beta_0 + \beta_1 \,\text{WSRoadDensity} + \beta_2 \,\text{WSDevHigh} + \beta_3 \,\text{RoadDistance} \\&amp;\quad + \beta_4 \,\text{InterstateDistance} \end{align}
 \]</span></p>
 </section>
 <section id="hypothesis" class="level3">
@@ -426,34 +402,35 @@ H_A &amp;: \beta_1 != 0
 \end{align}
 \]</span></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make a Gamma model with Chloride as response and WS_RoadDensity as the predictor</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>model_cl <span class="ot">&lt;-</span> <span class="fu">glm</span>( Chloride <span class="sc">~</span> WS_RoadDensity </span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Confounding variables</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    <span class="sc">+</span> WS_Crops <span class="sc">+</span> WS_Dev_High <span class="sc">+</span> LakeArea </span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="sc">+</span> WS_Area <span class="sc">+</span> MaxDepth <span class="sc">+</span> WS_OpenWater <span class="sc">+</span></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    RoadDistance <span class="sc">+</span> InterstateDistance,</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a> </span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">family =</span> <span class="fu">Gamma</span>(<span class="at">link =</span> <span class="st">"log"</span>),</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> df</span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make a Gamma model with Chloride as response and WS_RoadDensity as the predictor</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>model_cl <span class="ot">&lt;-</span> <span class="fu">glm</span>( Chloride <span class="sc">~</span> WS_RoadDensity </span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Confounding variables</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    <span class="sc">+</span> WS_Dev_High <span class="sc">+</span> RoadDistance <span class="sc">+</span> InterstateDistance,</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">family =</span> <span class="fu">Gamma</span>(<span class="at">link =</span> <span class="st">"log"</span>),</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> df</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 </section>
 <section id="model-output" class="level2">
 <h2 class="anchored" data-anchor-id="model-output">Model Output</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Select and round model outputs to include in kable</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>model_table <span class="ot">&lt;-</span> <span class="fu">tidy</span>(model_cl) <span class="sc">|&gt;</span> <span class="co"># Turn model_cl into a tidy tibble</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">estimate =</span> <span class="fu">round</span>(estimate, <span class="dv">4</span>),</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">std.error =</span> <span class="fu">round</span>(std.error, <span class="dv">4</span>),</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">statistic =</span> <span class="fu">round</span>(statistic, <span class="dv">2</span>),</span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">p.value =</span> <span class="fu">round</span>(p.value, <span class="dv">8</span>)</span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Create kable with model_cl outputs</span></span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(model_table, <span class="at">format =</span> <span class="st">"html"</span>, <span class="at">caption =</span> <span class="st">"Gamma GLM Results"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_styling</span>(<span class="at">full_width =</span> <span class="cn">TRUE</span>, <span class="at">bootstrap_options =</span> <span class="fu">c</span>(<span class="st">"striped"</span>)) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Select and round model outputs to include in kable</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>model_table <span class="ot">&lt;-</span> <span class="fu">tidy</span>(model_cl) <span class="sc">|&gt;</span> <span class="co"># Turn model_cl into a tidy tibble</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">estimate =</span> <span class="fu">round</span>(estimate, <span class="dv">4</span>),</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">std.error =</span> <span class="fu">round</span>(std.error, <span class="dv">4</span>),</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">statistic =</span> <span class="fu">round</span>(statistic, <span class="dv">2</span>),</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">p.value =</span> <span class="fu">round</span>(p.value, <span class="dv">8</span>)</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Create kable with model_cl outputs</span></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>k1 <span class="ot">&lt;-</span> <span class="fu">kable</span>(model_table, <span class="at">format =</span> <span class="st">"html"</span>, <span class="at">caption =</span> <span class="st">"Gamma GLM Results"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_styling</span>(<span class="at">full_width =</span> <span class="cn">TRUE</span>, <span class="at">bootstrap_options =</span> <span class="fu">c</span>(<span class="st">"striped"</span>)) </span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Print the kable</span></span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>k1</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <table class="table table-striped caption-top table-sm small">
 <caption>Gamma GLM Results</caption>
@@ -469,172 +446,95 @@ H_A &amp;: \beta_1 != 0
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">(Intercept)</td>
-<td style="text-align: right;">2.4436</td>
-<td style="text-align: right;">0.1790</td>
-<td style="text-align: right;">13.65</td>
+<td style="text-align: right;">3.0681</td>
+<td style="text-align: right;">0.1323</td>
+<td style="text-align: right;">23.19</td>
 <td style="text-align: right;">0.0000000</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">WS_RoadDensity</td>
-<td style="text-align: right;">0.0198</td>
-<td style="text-align: right;">0.0028</td>
-<td style="text-align: right;">6.96</td>
+<td style="text-align: right;">0.0172</td>
+<td style="text-align: right;">0.0025</td>
+<td style="text-align: right;">6.88</td>
 <td style="text-align: right;">0.0000000</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">WS_Crops</td>
-<td style="text-align: right;">0.0106</td>
-<td style="text-align: right;">0.0027</td>
-<td style="text-align: right;">3.97</td>
-<td style="text-align: right;">0.0000730</td>
-</tr>
-<tr class="even">
 <td style="text-align: left;">WS_Dev_High</td>
-<td style="text-align: right;">0.0308</td>
-<td style="text-align: right;">0.0362</td>
-<td style="text-align: right;">0.85</td>
-<td style="text-align: right;">0.3946193</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">LakeArea</td>
-<td style="text-align: right;">0.0000</td>
-<td style="text-align: right;">0.0000</td>
-<td style="text-align: right;">0.34</td>
-<td style="text-align: right;">0.7330230</td>
+<td style="text-align: right;">-0.0035</td>
+<td style="text-align: right;">0.0254</td>
+<td style="text-align: right;">-0.14</td>
+<td style="text-align: right;">0.8891520</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">WS_Area</td>
-<td style="text-align: right;">0.0000</td>
-<td style="text-align: right;">0.0000</td>
-<td style="text-align: right;">0.37</td>
-<td style="text-align: right;">0.7129681</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">MaxDepth</td>
-<td style="text-align: right;">-0.0040</td>
-<td style="text-align: right;">0.0059</td>
-<td style="text-align: right;">-0.68</td>
-<td style="text-align: right;">0.4934170</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">WS_OpenWater</td>
-<td style="text-align: right;">-0.0043</td>
-<td style="text-align: right;">0.0190</td>
-<td style="text-align: right;">-0.23</td>
-<td style="text-align: right;">0.8202812</td>
-</tr>
-<tr class="odd">
 <td style="text-align: left;">RoadDistance</td>
-<td style="text-align: right;">-0.0426</td>
-<td style="text-align: right;">0.0107</td>
-<td style="text-align: right;">-3.98</td>
-<td style="text-align: right;">0.0000705</td>
+<td style="text-align: right;">-0.0500</td>
+<td style="text-align: right;">0.0102</td>
+<td style="text-align: right;">-4.89</td>
+<td style="text-align: right;">0.0000011</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">InterstateDistance</td>
-<td style="text-align: right;">-0.0101</td>
+<td style="text-align: right;">-0.0130</td>
 <td style="text-align: right;">0.0012</td>
-<td style="text-align: right;">-8.21</td>
+<td style="text-align: right;">-11.31</td>
 <td style="text-align: right;">0.0000000</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
-</section>
-<section id="simulate-data" class="level2">
-<h2 class="anchored" data-anchor-id="simulate-data">Simulate Data</h2>
-<p>The code chunk below uses the model_cl model to simulate data to be used in our model predictions. This data is simulated with new chloride concentration values by using fitted Gamma GLM. This is done to see if the model has reasonable assumptions. New values are simulated using the model’s estimated mean and dispersion.</p>
-<p>The Gamma GLM assumes that:</p>
-<ul>
-<li><p>chloride is continuous and positive</p></li>
-<li><p>variance increases as the mean increases</p></li>
-<li><p>effects of predictor variables are multiplicative</p></li>
-</ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Set seed</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">67</span>)</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Extract coefficients from fitted model</span></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>coefficients <span class="ot">&lt;-</span> <span class="fu">coef</span>(model_cl)</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Extract the model matrix</span></span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>matrix <span class="ot">&lt;-</span> <span class="fu">model.matrix</span>(model_cl)</span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Perform matrix multiplication to find linear predictor</span></span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>linear_predictor <span class="ot">&lt;-</span> matrix <span class="sc">%*%</span> coefficients </span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="co"># exp() to get expected mean chloride concentration</span></span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>expected_mean_cl <span class="ot">&lt;-</span> <span class="fu">exp</span>(linear_predictor)</span>
-<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert model dispersion estimate to a shape parameter</span></span>
-<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>disp <span class="ot">&lt;-</span> <span class="fu">summary</span>(model_cl)<span class="sc">$</span>dispersion</span>
-<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>shape <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">/</span> disp</span>
-<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Simulate new Chloride data</span></span>
-<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>Chloride_sim <span class="ot">&lt;-</span> <span class="fu">rgamma</span>(</span>
-<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>  <span class="at">n =</span> <span class="fu">length</span>(expected_mean_cl),</span>
-<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>  <span class="at">shape =</span> shape,</span>
-<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>  <span class="at">scale =</span> expected_mean_cl <span class="sc">/</span> shape</span>
-<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Assign rows used in the  model_cl model to df_model</span></span>
-<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>df_model <span class="ot">&lt;-</span> model_cl<span class="sc">$</span>model</span>
-<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a Chloride_sim column and insert the Chloride_sim data into it </span></span>
-<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>df_simulated <span class="ot">&lt;-</span> df_model <span class="sc">|&gt;</span></span>
-<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Chloride_sim =</span> Chloride_sim)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Assign rows used in the  model_cl model to df_model</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>df_model <span class="ot">&lt;-</span> model_cl<span class="sc">$</span>model</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a grid for plotting WS_RoadDensity and Chloride</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>pred_line <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">WS_RoadDensity =</span> <span class="fu">seq</span>(<span class="fu">min</span>(df_model<span class="sc">$</span>WS_RoadDensity, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>                    <span class="fu">max</span>(df_model<span class="sc">$</span>WS_RoadDensity, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>                    <span class="at">length.out =</span> <span class="dv">1000</span>),</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Find the mean of all confounding variables to hold them constant</span></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">WS_Dev_High =</span> <span class="fu">mean</span>(df_model<span class="sc">$</span>WS_Dev_High, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">RoadDistance =</span> <span class="fu">mean</span>(df_model<span class="sc">$</span>RoadDistance, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">InterstateDistance =</span> <span class="fu">mean</span>(df_model<span class="sc">$</span>InterstateDistance, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a grid for plotting WS_RoadDensity and Chloride</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>pred_line <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">WS_RoadDensity =</span> <span class="fu">seq</span>(<span class="fu">min</span>(df_simulated<span class="sc">$</span>WS_RoadDensity, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>                    <span class="fu">max</span>(df_simulated<span class="sc">$</span>WS_RoadDensity, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>                    <span class="at">length.out =</span> <span class="dv">1000</span>),</span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Find the mean of all confounding variables to hold them constant</span></span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">WS_Dev_High =</span> <span class="fu">mean</span>(df_simulated<span class="sc">$</span>WS_Dev_High, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">LakeArea =</span> <span class="fu">mean</span>(df_simulated<span class="sc">$</span>LakeArea, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">WS_Area =</span> <span class="fu">mean</span>(df_simulated<span class="sc">$</span>WS_Area, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">MaxDepth =</span> <span class="fu">mean</span>(df_simulated<span class="sc">$</span>MaxDepth, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">WS_OpenWater =</span> <span class="fu">mean</span>(df_simulated<span class="sc">$</span>WS_OpenWater, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">WS_Crops =</span> <span class="fu">mean</span>(df_simulated<span class="sc">$</span>WS_Crops, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">RoadDistance =</span> <span class="fu">mean</span>(df_simulated<span class="sc">$</span>RoadDistance, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">InterstateDistance =</span> <span class="fu">mean</span>(df_simulated<span class="sc">$</span>InterstateDistance, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create predictions for pred_line</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>preds <span class="ot">&lt;-</span> <span class="fu">predict</span>(</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  model_cl,</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">newdata =</span> pred_line,</span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"link"</span>,</span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">se.fit =</span> <span class="cn">TRUE</span></span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert link (log scale) to response scale</span></span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>pred_line <span class="ot">&lt;-</span> pred_line <span class="sc">|&gt;</span></span>
-<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">fit_link =</span> preds<span class="sc">$</span>fit,</span>
-<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">se_link =</span> preds<span class="sc">$</span>se.fit,</span>
-<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">fit =</span> <span class="fu">exp</span>(fit_link),</span>
-<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">lower =</span> <span class="fu">exp</span>(fit_link <span class="sc">-</span> <span class="fl">1.96</span> <span class="sc">*</span> se_link),</span>
-<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">upper =</span> <span class="fu">exp</span>(fit_link <span class="sc">+</span> <span class="fl">1.96</span> <span class="sc">*</span> se_link)</span>
-<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create predictions for pred_line</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>preds <span class="ot">&lt;-</span> <span class="fu">predict</span>(</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  model_cl,</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">newdata =</span> pred_line,</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"link"</span>,</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">se.fit =</span> <span class="cn">TRUE</span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert link (log scale) to response scale</span></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>pred_line <span class="ot">&lt;-</span> pred_line <span class="sc">|&gt;</span></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">fit_link =</span> preds<span class="sc">$</span>fit,</span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">se_link =</span> preds<span class="sc">$</span>se.fit,</span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">fit =</span> <span class="fu">exp</span>(fit_link),</span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">lower =</span> <span class="fu">exp</span>(fit_link <span class="sc">-</span> <span class="fl">1.96</span> <span class="sc">*</span> se_link),</span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">upper =</span> <span class="fu">exp</span>(fit_link <span class="sc">+</span> <span class="fl">1.96</span> <span class="sc">*</span> se_link)</span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="data-visualization" class="level2">
 <h2 class="anchored" data-anchor-id="data-visualization">Data Visualization</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot data points, predicted mean curve, and 95% confidence interval</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">data =</span> df_simulated, <span class="fu">aes</span>(<span class="at">x =</span> WS_RoadDensity, <span class="at">y =</span> Chloride),</span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>             <span class="at">color =</span> <span class="st">"dodgerblue"</span>, <span class="at">alpha =</span> .<span class="dv">67</span>) <span class="sc">+</span> <span class="co"># Data points</span></span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_ribbon</span>(<span class="at">data =</span> pred_line, <span class="fu">aes</span>(<span class="at">x =</span> WS_RoadDensity, <span class="at">ymin =</span> lower, <span class="at">ymax =</span> upper),</span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>              <span class="at">alpha =</span> <span class="fl">0.25</span>, <span class="at">fill =</span> <span class="st">"lightblue"</span>) <span class="sc">+</span> <span class="co"># Confidence interval</span></span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">data =</span> pred_line, <span class="fu">aes</span>(<span class="at">x =</span> WS_RoadDensity, <span class="at">y =</span> fit),</span>
-<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>            <span class="at">color =</span> <span class="st">"black"</span>, <span class="at">linewidth =</span> <span class="dv">1</span>) <span class="sc">+</span> <span class="co"># Predicted mean curve</span></span>
-<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
-<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Effect Road Density in Watershed on Lake Chloride"</span>,</span>
-<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Road Density in Watershed"</span>,</span>
-<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Chloride (mg/L)"</span></span>
-<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot data points, predicted mean curve, and 95% confidence interval</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">data =</span> df_model, <span class="fu">aes</span>(<span class="at">x =</span> WS_RoadDensity, <span class="at">y =</span> Chloride),</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>             <span class="at">color =</span> <span class="st">"dodgerblue"</span>, <span class="at">alpha =</span> .<span class="dv">67</span>) <span class="sc">+</span> <span class="co"># Data points</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_ribbon</span>(<span class="at">data =</span> pred_line, <span class="fu">aes</span>(<span class="at">x =</span> WS_RoadDensity, <span class="at">ymin =</span> lower, <span class="at">ymax =</span> upper),</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>              <span class="at">alpha =</span> <span class="fl">0.25</span>, <span class="at">fill =</span> <span class="st">"lightblue"</span>) <span class="sc">+</span> <span class="co"># Confidence interval</span></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">data =</span> pred_line, <span class="fu">aes</span>(<span class="at">x =</span> WS_RoadDensity, <span class="at">y =</span> fit),</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>            <span class="at">color =</span> <span class="st">"black"</span>, <span class="at">linewidth =</span> <span class="dv">1</span>) <span class="sc">+</span> <span class="co"># Predicted mean curve</span></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Effect Road Density in Watershed on Lake Chloride"</span>,</span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Road Density in Watershed"</span>,</span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Chloride (mg/L)"</span></span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -650,18 +550,276 @@ H_A &amp;: \beta_1 != 0
 <li><p>Null hypothesis (H₀): Road density in a watershed has no effect on chloride concentrations in lakes (β₁ = 0).</p></li>
 <li><p>Alternative hypothesis (Hₐ): Road density has an effect on chloride concentrations in lakes (β₁ ≠ 0).</p></li>
 </ul>
-<p>Due to the fact that the p-vlaue of of <code>WS_RoadDensity</code> is much smaller than 0.05, my data rejects the null hypothesis. This means that road density in a watershed is strongly associated with chloride concentrations in lakes. According to my model for each 1-unit increase in <code>WS_RoadDensity</code> the expected chloride concentration increases by exp(0.0198) or 1.019997. This is likely caused by the fact that road salts are used to defrost roads since this is a snowy region of America.</p>
-
-
-
+<p>Due to the fact that the p-vlaue of of <code>WS_RoadDensity</code> is much smaller than 0.05, my data rejects the null hypothesis. This means that road density in a watershed is strongly associated with chloride concentrations in lakes. According to my model for each 1-unit increase in <code>WS_RoadDensity</code> the expected chloride concentration increases by exp(0.0172). This is likely caused by the fact that road salts are used to defrost roads since this is a snowy region of America.</p>
 </section>
-</section>
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-dugan_lake_chloride_2020" class="csl-entry" role="listitem">
-Dugan, Hilary A., Nicholas K. Skaff, Jonathan P. Doubek, Sarah Bartlett, Samantha M. Burke, Flora E. Krivak-Tetley, and Jamie C. Summers. 2020. <span>“Lake Chloride Concentrations and Model Predictions for 49,432 Lakes in the Midwest and Northeast United States.”</span> Environmental Data Initiative. <a href="https://doi.org/10.6073/pasta/d581077c23dcfe33f48baf835339fa2f">https://doi.org/10.6073/pasta/d581077c23dcfe33f48baf835339fa2f</a>.
+<section id="simulate-data" class="level2">
+<h2 class="anchored" data-anchor-id="simulate-data">Simulate Data</h2>
+<p>The code chunk below uses the model_cl model to simulate data to be used in our model predictions. This data is simulated with new chloride concentration values by using fitted Gamma GLM. This is done to see if the model has reasonable assumptions. New values are simulated using the model’s estimated mean and standard deviation.</p>
+<p>The Gamma GLM assumes that:</p>
+<ul>
+<li><p>chloride is continuous and positive</p></li>
+<li><p>variance increases as the mean increases</p></li>
+<li><p>effects of predictor variables are multiplicative</p></li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate the means and SDs for each predictor</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>mean_WS_RoadDensity <span class="ot">&lt;-</span> <span class="fu">mean</span>(df_model<span class="sc">$</span>WS_RoadDensity, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>sd_WS_RoadDensity   <span class="ot">&lt;-</span> <span class="fu">sd</span>(df_model<span class="sc">$</span>WS_RoadDensity, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>mean_WS_Dev_High <span class="ot">&lt;-</span> <span class="fu">mean</span>(df_model<span class="sc">$</span>WS_Dev_High, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>sd_WS_Dev_High   <span class="ot">&lt;-</span> <span class="fu">sd</span>(df_model<span class="sc">$</span>WS_Dev_High, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>mean_RoadDistance <span class="ot">&lt;-</span> <span class="fu">mean</span>(df_model<span class="sc">$</span>RoadDistance, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>sd_RoadDistance   <span class="ot">&lt;-</span> <span class="fu">sd</span>(df_model<span class="sc">$</span>RoadDistance, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>mean_InterstateDistance <span class="ot">&lt;-</span> <span class="fu">mean</span>(df_model<span class="sc">$</span>InterstateDistance, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>sd_InterstateDistance   <span class="ot">&lt;-</span> <span class="fu">sd</span>(df_model<span class="sc">$</span>InterstateDistance, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-</div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{martinez2025,
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Set seed</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">67</span>)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Choose the sample size</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="dv">10000</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Extract coefficients from model_cl</span></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>betas <span class="ot">&lt;-</span> <span class="fu">coef</span>(model_cl)</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Assign coefficients for each variable</span></span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>beta0 <span class="ot">&lt;-</span> betas[<span class="st">"(Intercept)"</span>]</span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>beta1 <span class="ot">&lt;-</span> betas[<span class="st">"WS_RoadDensity"</span>]</span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>beta2 <span class="ot">&lt;-</span> betas[<span class="st">"WS_Dev_High"</span>] </span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a>beta3 <span class="ot">&lt;-</span> betas[<span class="st">"RoadDistance"</span>]</span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a>beta4 <span class="ot">&lt;-</span> betas[<span class="st">"InterstateDistance"</span>]</span>
+<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Set the Gamma shape parameter</span></span>
+<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a>phi <span class="ot">&lt;-</span> <span class="dv">3</span></span>
+<span id="cb13-19"><a href="#cb13-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-20"><a href="#cb13-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Simulate each of the predictors</span></span>
+<span id="cb13-21"><a href="#cb13-21" aria-hidden="true" tabindex="-1"></a>WS_RoadDensity <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n, <span class="at">mean =</span> mean_WS_RoadDensity, <span class="at">sd =</span> sd_WS_RoadDensity)</span>
+<span id="cb13-22"><a href="#cb13-22" aria-hidden="true" tabindex="-1"></a>WS_Dev_High <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n, <span class="at">mean =</span> mean_WS_Dev_High, <span class="at">sd =</span> sd_WS_Dev_High)</span>
+<span id="cb13-23"><a href="#cb13-23" aria-hidden="true" tabindex="-1"></a>RoadDistance <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n, <span class="at">mean =</span> mean_RoadDistance, <span class="at">sd =</span> sd_RoadDistance)</span>
+<span id="cb13-24"><a href="#cb13-24" aria-hidden="true" tabindex="-1"></a>InterstateDistance <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n, <span class="at">mean =</span> mean_InterstateDistance, <span class="at">sd =</span> sd_InterstateDistance)</span>
+<span id="cb13-25"><a href="#cb13-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-26"><a href="#cb13-26" aria-hidden="true" tabindex="-1"></a><span class="co"># Replace simulated negative values with 0s, since the gamma doesn't accept them</span></span>
+<span id="cb13-27"><a href="#cb13-27" aria-hidden="true" tabindex="-1"></a>WS_RoadDensity[WS_RoadDensity <span class="sc">&lt;</span> <span class="dv">0</span>] <span class="ot">&lt;-</span> <span class="dv">0</span></span>
+<span id="cb13-28"><a href="#cb13-28" aria-hidden="true" tabindex="-1"></a>WS_Dev_High[WS_Dev_High <span class="sc">&lt;</span> <span class="dv">0</span>] <span class="ot">&lt;-</span> <span class="dv">0</span></span>
+<span id="cb13-29"><a href="#cb13-29" aria-hidden="true" tabindex="-1"></a>RoadDistance[RoadDistance <span class="sc">&lt;</span> <span class="dv">0</span>] <span class="ot">&lt;-</span> <span class="dv">0</span></span>
+<span id="cb13-30"><a href="#cb13-30" aria-hidden="true" tabindex="-1"></a>InterstateDistance[InterstateDistance <span class="sc">&lt;</span> <span class="dv">0</span>] <span class="ot">&lt;-</span> <span class="dv">0</span></span>
+<span id="cb13-31"><a href="#cb13-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-32"><a href="#cb13-32" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute the linear predictor</span></span>
+<span id="cb13-33"><a href="#cb13-33" aria-hidden="true" tabindex="-1"></a>log_mu <span class="ot">&lt;-</span> beta0 <span class="sc">+</span></span>
+<span id="cb13-34"><a href="#cb13-34" aria-hidden="true" tabindex="-1"></a>  beta1 <span class="sc">*</span> WS_RoadDensity <span class="sc">+</span></span>
+<span id="cb13-35"><a href="#cb13-35" aria-hidden="true" tabindex="-1"></a>  beta2 <span class="sc">*</span> WS_Dev_High <span class="sc">+</span></span>
+<span id="cb13-36"><a href="#cb13-36" aria-hidden="true" tabindex="-1"></a>  beta3 <span class="sc">*</span> RoadDistance <span class="sc">+</span></span>
+<span id="cb13-37"><a href="#cb13-37" aria-hidden="true" tabindex="-1"></a>  beta4 <span class="sc">*</span> InterstateDistance</span>
+<span id="cb13-38"><a href="#cb13-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-39"><a href="#cb13-39" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert the linear predictor to mean</span></span>
+<span id="cb13-40"><a href="#cb13-40" aria-hidden="true" tabindex="-1"></a>mu <span class="ot">&lt;-</span> <span class="fu">exp</span>(log_mu)</span>
+<span id="cb13-41"><a href="#cb13-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-42"><a href="#cb13-42" aria-hidden="true" tabindex="-1"></a><span class="co"># Simulate chloride values</span></span>
+<span id="cb13-43"><a href="#cb13-43" aria-hidden="true" tabindex="-1"></a>Chloride <span class="ot">&lt;-</span> <span class="fu">rgamma</span>(n, <span class="at">shape =</span> phi, <span class="at">scale =</span> mu <span class="sc">/</span> phi)</span>
+<span id="cb13-44"><a href="#cb13-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-45"><a href="#cb13-45" aria-hidden="true" tabindex="-1"></a><span class="co"># Put predicted vairables into a dataframe</span></span>
+<span id="cb13-46"><a href="#cb13-46" aria-hidden="true" tabindex="-1"></a>sim_df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(Chloride, WS_RoadDensity, WS_Dev_High, RoadDistance, InterstateDistance)</span>
+<span id="cb13-47"><a href="#cb13-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-48"><a href="#cb13-48" aria-hidden="true" tabindex="-1"></a><span class="co"># Fit your Gamma GLM</span></span>
+<span id="cb13-49"><a href="#cb13-49" aria-hidden="true" tabindex="-1"></a>sim_model <span class="ot">&lt;-</span> <span class="fu">glm</span>(</span>
+<span id="cb13-50"><a href="#cb13-50" aria-hidden="true" tabindex="-1"></a>  Chloride <span class="sc">~</span> WS_RoadDensity</span>
+<span id="cb13-51"><a href="#cb13-51" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Confounding variables</span></span>
+<span id="cb13-52"><a href="#cb13-52" aria-hidden="true" tabindex="-1"></a>    <span class="sc">+</span> WS_Dev_High <span class="sc">+</span> RoadDistance <span class="sc">+</span> InterstateDistance,</span>
+<span id="cb13-53"><a href="#cb13-53" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb13-54"><a href="#cb13-54" aria-hidden="true" tabindex="-1"></a>  <span class="at">family =</span> <span class="fu">Gamma</span>(<span class="at">link =</span> <span class="st">"log"</span>),</span>
+<span id="cb13-55"><a href="#cb13-55" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> sim_df</span>
+<span id="cb13-56"><a href="#cb13-56" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb13-57"><a href="#cb13-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-58"><a href="#cb13-58" aria-hidden="true" tabindex="-1"></a><span class="co"># Select and round model outputs to include in kable</span></span>
+<span id="cb13-59"><a href="#cb13-59" aria-hidden="true" tabindex="-1"></a>model_table <span class="ot">&lt;-</span> <span class="fu">tidy</span>(sim_model) <span class="sc">|&gt;</span> <span class="co"># Turn sim_model into a tidy tibble</span></span>
+<span id="cb13-60"><a href="#cb13-60" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb13-61"><a href="#cb13-61" aria-hidden="true" tabindex="-1"></a>    <span class="at">estimate =</span> <span class="fu">round</span>(estimate, <span class="dv">4</span>),</span>
+<span id="cb13-62"><a href="#cb13-62" aria-hidden="true" tabindex="-1"></a>    <span class="at">std.error =</span> <span class="fu">round</span>(std.error, <span class="dv">4</span>),</span>
+<span id="cb13-63"><a href="#cb13-63" aria-hidden="true" tabindex="-1"></a>    <span class="at">statistic =</span> <span class="fu">round</span>(statistic, <span class="dv">2</span>),</span>
+<span id="cb13-64"><a href="#cb13-64" aria-hidden="true" tabindex="-1"></a>    <span class="at">p.value =</span> <span class="fu">round</span>(p.value, <span class="dv">8</span>)</span>
+<span id="cb13-65"><a href="#cb13-65" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb13-66"><a href="#cb13-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-67"><a href="#cb13-67" aria-hidden="true" tabindex="-1"></a><span class="co"># Create kable with sim_model outputs</span></span>
+<span id="cb13-68"><a href="#cb13-68" aria-hidden="true" tabindex="-1"></a>k2 <span class="ot">&lt;-</span> <span class="fu">kable</span>(model_table, <span class="at">format =</span> <span class="st">"html"</span>, <span class="at">caption =</span> <span class="st">"Simulated Gamma GLM Results"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb13-69"><a href="#cb13-69" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_styling</span>(<span class="at">full_width =</span> <span class="cn">TRUE</span>, <span class="at">bootstrap_options =</span> <span class="fu">c</span>(<span class="st">"striped"</span>)) </span>
+<span id="cb13-70"><a href="#cb13-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-71"><a href="#cb13-71" aria-hidden="true" tabindex="-1"></a><span class="co"># Print the kable</span></span>
+<span id="cb13-72"><a href="#cb13-72" aria-hidden="true" tabindex="-1"></a>k2</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<table class="table table-striped caption-top table-sm small">
+<caption>Simulated Gamma GLM Results</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">term</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">estimate</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">std.error</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">statistic</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">p.value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">(Intercept)</td>
+<td style="text-align: right;">3.0763</td>
+<td style="text-align: right;">0.0144</td>
+<td style="text-align: right;">213.31</td>
+<td style="text-align: right;">0.0000000</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">WS_RoadDensity</td>
+<td style="text-align: right;">0.0171</td>
+<td style="text-align: right;">0.0002</td>
+<td style="text-align: right;">77.97</td>
+<td style="text-align: right;">0.0000000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">WS_Dev_High</td>
+<td style="text-align: right;">-0.0018</td>
+<td style="text-align: right;">0.0032</td>
+<td style="text-align: right;">-0.55</td>
+<td style="text-align: right;">0.5794011</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RoadDistance</td>
+<td style="text-align: right;">-0.0510</td>
+<td style="text-align: right;">0.0011</td>
+<td style="text-align: right;">-46.99</td>
+<td style="text-align: right;">0.0000000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">InterstateDistance</td>
+<td style="text-align: right;">-0.0130</td>
+<td style="text-align: right;">0.0001</td>
+<td style="text-align: right;">-105.40</td>
+<td style="text-align: right;">0.0000000</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="check-the-real-data-model-estimates-against-the-simulation-model-estimates" class="level2">
+<h2 class="anchored" data-anchor-id="check-the-real-data-model-estimates-against-the-simulation-model-estimates">Check the real data model estimates against the simulation model estimates</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Print real data model estimates</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>k1</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<table class="table table-striped caption-top table-sm small">
+<caption>Gamma GLM Results</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">term</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">estimate</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">std.error</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">statistic</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">p.value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">(Intercept)</td>
+<td style="text-align: right;">3.0681</td>
+<td style="text-align: right;">0.1323</td>
+<td style="text-align: right;">23.19</td>
+<td style="text-align: right;">0.0000000</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">WS_RoadDensity</td>
+<td style="text-align: right;">0.0172</td>
+<td style="text-align: right;">0.0025</td>
+<td style="text-align: right;">6.88</td>
+<td style="text-align: right;">0.0000000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">WS_Dev_High</td>
+<td style="text-align: right;">-0.0035</td>
+<td style="text-align: right;">0.0254</td>
+<td style="text-align: right;">-0.14</td>
+<td style="text-align: right;">0.8891520</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RoadDistance</td>
+<td style="text-align: right;">-0.0500</td>
+<td style="text-align: right;">0.0102</td>
+<td style="text-align: right;">-4.89</td>
+<td style="text-align: right;">0.0000011</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">InterstateDistance</td>
+<td style="text-align: right;">-0.0130</td>
+<td style="text-align: right;">0.0012</td>
+<td style="text-align: right;">-11.31</td>
+<td style="text-align: right;">0.0000000</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Print simulated data model estimates</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>k2</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<table class="table table-striped caption-top table-sm small">
+<caption>Simulated Gamma GLM Results</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">term</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">estimate</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">std.error</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">statistic</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">p.value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">(Intercept)</td>
+<td style="text-align: right;">3.0763</td>
+<td style="text-align: right;">0.0144</td>
+<td style="text-align: right;">213.31</td>
+<td style="text-align: right;">0.0000000</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">WS_RoadDensity</td>
+<td style="text-align: right;">0.0171</td>
+<td style="text-align: right;">0.0002</td>
+<td style="text-align: right;">77.97</td>
+<td style="text-align: right;">0.0000000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">WS_Dev_High</td>
+<td style="text-align: right;">-0.0018</td>
+<td style="text-align: right;">0.0032</td>
+<td style="text-align: right;">-0.55</td>
+<td style="text-align: right;">0.5794011</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RoadDistance</td>
+<td style="text-align: right;">-0.0510</td>
+<td style="text-align: right;">0.0011</td>
+<td style="text-align: right;">-46.99</td>
+<td style="text-align: right;">0.0000000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">InterstateDistance</td>
+<td style="text-align: right;">-0.0130</td>
+<td style="text-align: right;">0.0001</td>
+<td style="text-align: right;">-105.40</td>
+<td style="text-align: right;">0.0000000</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>After applying the model to the simulated dataset, constructed based on the assumptions of model_cl, the estimated parameters closely matched the true values. This demonstrates that the simulated data recovered the original model parameters. Even with simulated data, the p-value for WS_RoadDensity is much smaller than 0.05, indicating that we can reject the null hypothesis.</p>
+
+
+</section>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{martinez2025,
   author = {Martinez, Austin},
   title = {Chloride {Contamination} {Analysis}},
   date = {2025-12-04},
