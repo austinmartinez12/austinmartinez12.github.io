@@ -38,8 +38,8 @@ subtitle: "Experience, Skills, and Education"
 **California State University, Dominguez Hills**, Carson, CA\
 *October 2023 – December 2024*
 
--   Used spatial data, GIS, and R to investigate the causes and consequences of rarity in 14 species of the desert plant *Encelia*. Applied data cleaning methods to filter erroneous geographic coordinates, ensuring accurate distribution maps.
--   Automated mapping in R with ggplot2 and geographic boundary layers to optimize parameters for precise species ranges.
+-   Used **spatial data**, **GIS**, and **R** to investigate the causes and consequences of rarity in 14 species of the desert plant *Encelia*. Applied data cleaning methods to filter erroneous geographic coordinates, ensuring accurate distribution maps.
+-   Automated mapping in **R** with **ggplot2** and geographic boundary layers to optimize parameters for precise species ranges.
 -   Used resulting maps to determine which species were common versus rare.
 
 # Skills
