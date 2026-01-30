@@ -18,7 +18,7 @@ subtitle: "Experience, Skills, and Education"
 
 ------------------------------------------------------------------------
 
-### REU Research Intern
+### GIS & Machine Learning Research Intern (NSF REU)
 
 **Biosphere 2**, Oracle, CA\
 *June 2024 – August 2024*
@@ -33,7 +33,7 @@ subtitle: "Experience, Skills, and Education"
 
 ------------------------------------------------------------------------
 
-### Undergraduate Researcher
+### Undergraduate Geospatial Researcher
 
 **California State University, Dominguez Hills**, Carson, CA\
 *October 2023 – December 2024*
@@ -65,7 +65,8 @@ subtitle: "Experience, Skills, and Education"
 
 **University of California, Santa Barbara (UCSB) - Bren School of Environmental Science & Management**\
 *Expected June 2025*\
-GPA: 4.00
+GPA: 4.00\
+**Honors/Awards:** Environmental Data Science Fellowship
 
 ------------------------------------------------------------------------
 
