@@ -18,8 +18,8 @@ website:
         text: Home
       - about.qmd
       - posts.qmd # add your listing page file to your navbar
-      - href: resources.qmd
-        text: Resources
+     # - href: resources.qmd
+     #   text: Resources
       - icon: github
         href: https://github.com/austinmartinez12/austinmartinez12.github.io
   page-footer: 
