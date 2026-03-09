@@ -49,7 +49,7 @@ subtitle: "Experience, Skills, and Education"
 -   **Programming tools:** R Studio, Python, Git, GitHub\
 -   **GIS & Spatial:** ArcGIS Pro, ArcGIS Online, handheld GPS navigator, field mapping\
 -   **Analysis & Computing:** Machine Learning, High-Performance Computing\
--   **Tools:** Excel, Adobe Creative Suite, ImageJ
+-   **Tools:** Excel, Adobe Creative Suite, ImageJ, Afinity
 
 ### Field & Applied Skills
 
