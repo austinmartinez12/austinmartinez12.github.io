@@ -64,7 +64,7 @@ subtitle: "Experience, Skills, and Education"
 ### Master of Environmental Data Science
 
 **University of California, Santa Barbara (UCSB) - Bren School of Environmental Science & Management**\
-*Expected June 2025*\
+*Expected June 2026*\
 GPA: 4.00\
 **Honors/Awards:** Environmental Data Science Fellowship
 
