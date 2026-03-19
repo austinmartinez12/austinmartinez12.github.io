@@ -25,9 +25,9 @@ execute:
   warning: false
 ---
 
-# IV. Write your blog post
+## IV. Write your blog post
 
-## Share your data design process in a short, 1-2 page (\~500-1,000 words) science communication blog post-style write up. Your blog post should be structured as follows:
+### Share your data design process in a short, 1-2 page (\~500-1,000 words) science communication blog post-style write up. Your blog post should be structured as follows:
 
 **1. Open with an engaging introduction, which states any necesssary background, your motivation, question(s), data / data source(s), and goal(s) of your visualization. Storytelling helps to engage your reader**
 
